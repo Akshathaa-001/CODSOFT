@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.navbar-brand a span {
+    color: #3498db;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    background: #3498db;
+    border-radius: 4px;
+}
+
+.navbar.scrolled .navbar-brand a, .navbar.scrolled .navbar-menu li a {
+    color: #fff; 
+}
+
+.navbar.scrolled .navbar-brand a span {
+    color: #3498db; 
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("conference.jpg") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed; 
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0; 
+    max-width: 80%;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 2rem;
+    margin: 20px 0;
+
+}
+
+.hero-content .btn {
+    background: #FF9900;
+    color: white;
+    padding: 18px 28px;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 6px;
+}
+
+.navbar.scrolled {
+    background-color: #333;
+}
+
+
+.about-us {
+    padding: 4rem 0 ;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 50px;
+}
+
+
+#speakers {
+    background:white;
+    color: black;
+    padding: 50px 0;
+    width :100%;
+
+}
+
+#speakers h2 {
+    text-align: center;
+    margin-bottom: 60px;
+   font-size: 2.5rem;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    width: 100%;    
+    gap: 58px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+   
+}
+
+.speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.4s;
+   
+
+}
+
+.speaker:hover {
+    box-shadow: 0 10px 20px #2689fa; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.speaker img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s, box-shadow 0.4s;
+}
+
+.speaker h3 {
+    font-size: 2rem;
+    margin: 17px 0 5px;
+}
+
+.speaker p {
+    font-size: 1.5rem;
+    margin: 56px;
+    width: 100%; 
+    text-align: center;
+}
+
+#agenda {
+    color:white;
+    padding: 45px 20px;
+    background:#333;
+
+
+}
+
+#agenda h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: bold; 
+}
+
+.agenda-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 0 auto; 
+    padding: 0 25px;
+}
+
+.agenda-day {
+    text-align: center;
+    background: #ff9900;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.agenda-day h3 {
+    font-size: 2rem; 
+    margin: 10px;
+    margin-top:15px;
+    font-weight: bold; 
+}
+
+.agenda-day p {
+    font-size: 1.9rem; 
+    margin: 10px 0 0;
+    line-height: 1.5; 
+}
+
+#sponsors {
+    background: white;
+    color:black;
+    padding: 50px 0;
+}
+
+#sponsors h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer {
+    background: #262626;
+    color: white;
+    text-align: left;
+    padding: 40px 15px;
+    margin: 0; 
+
+}
+
+
+footer .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .footer-left {
+    flex: 1; 
+}
+
+footer .footer-center {
+    text-align: center; 
+    flex: 1; 
+    
+}
