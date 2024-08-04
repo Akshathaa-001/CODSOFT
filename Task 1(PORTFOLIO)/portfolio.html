@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #1abc9c);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: #2c3e50;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills li {
+            background-color: #eef1f7;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .projects .project {
+            margin-bottom: 2rem;
+        }
+
+        .projects h3 {
+            color: #2c3e50;
+            margin-top: 1rem;
+        }
+
+        .resume a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color:  #1abc9c;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .resume a:hover {
+            background-color: #2c3e50;
+        }
+
+        .contact p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .proficiency {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .proficiency .bars {
+            flex: 1;
+            margin-right: 2rem;
+        }
+
+        .proficiency .bars .bar {
+            background-color: #eef1f7;
+            border-radius: 20px;
+            margin: 0.5rem 0;
+            position: relative;
+            height: 20px;
+        }
+
+        .proficiency .bars .bar span {
+            background-color: #1abc9c;
+            display: block;
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .proficiency .image img {
+            max-width: 300px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AKSHATHAA SA</h1>
+        <p>Innovative Thinker on a Journey to Transform Technology!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+             <p>Hello! I'm Akshathaa SA, a recent Computer Science Engineering graduate with a strong passion for technology and software development. Proficient in modern web development technologies such as HTML5, CSS3, and JavaScript, I also have a solid foundation in Java and C programming, with a deep understanding of its principles and concepts. I enjoy creating interactive dashboards and reports to analyze and present complex data sets effectively. Eager to dive into the tech industry, I look forward to applying my skills in web development to contribute to innovative projects that make a difference.</p>
+
+        </section>
+
+        <section id="skills" class="section skills">
+            <h2>Skills</h2>
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>C</li>
+                <li>Java</li>
+            </ul>
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="proficiency" class="section proficiencys">
+            <h2>Proficiency</h2>
+	     <div class="section proficiency">
+            <div class="bars">
+		<p>HTML</p>
+                <div class="bar">
+                    <span style="width: 90%;"></span>
+                </div>
+                <p>CSS</p>
+                <div class="bar">
+                    <span style="width: 80%;"></span>
+                </div>
+                <p>C</p>
+                <div class="bar">
+                    <span style="width: 72%;"></span>
+                </div>
+                <p>JAVA</p>
+                <div class="bar">
+                    <span style="width: 80%;"></span>
+                </div>
+            </div>
+            <div class="image">
+                <img src="proficiency.jpg" alt="Proficiency Illustration">
+            </div>
+	</div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title 1: Portfolio Website</h3>
+                <p>A personal portfolio website to showcase my projects and skills. Built with HTML, CSS, and JavaScript. This project helped me improve my front-end development skills and gain experience with responsive design.</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2: Calculator</h3>
+                <p>A simple calculator website built with HTML, CSS, and JavaScript to perform basic arithmetic operations. This project improved my front-end development skills and provided a responsive user experience.</p>
+            </div> 
+	<div class="project">
+                <h3>Project Title 3: IBM Chatbot using Cloud</h3>
+                <p>An IBM chatbot application built using cloud services to provide real-time conversational support. This project enhanced my skills in integrating AI and cloud technologies for seamless user interactions.</p>
+            </div>     
+   </section>
+
+        <section id="resume" class="section resume">
+            <h2>Resume</h2>
+            <a href="AKSHATHAA resume.docx" download>Download Resume</a>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="akshathaasaravanamurthygmail.com">akshathaasaravanamurthygmail.com</a></p>
+            
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/akshathaa-saravanamurthy-1b62582b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/akshathaa</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Akshathaa Saravanamurthy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
